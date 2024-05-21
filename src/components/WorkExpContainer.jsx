@@ -9,7 +9,7 @@ import { EditExistingExpModal } from "./EditExistingExpModal";
 function WorkExpContainer() {
   const [addModalVisible, setAddModalVisible] = useState(false);
   const [editModalVisible, setEditModalVisible] = useState(false);
-  const [tempJobInfo, setTempJobInfo] = useState([
+  const [tempJobInfo, setTempJobInfo] = useState(
     {
       id: "",
       companyInput: "",
@@ -18,7 +18,7 @@ function WorkExpContainer() {
       jobTitle: "",
       jobOverview: "",
     },
-  ]);
+  );
   const [jobList, setJobList] = useState([]);
 
   // resets state - used when closing modal by saving or cancelling addition
@@ -113,13 +113,20 @@ function WorkExpContainer() {
   // errors with rendering look into it
   function handleCardEditSave() {
     setEditModalVisible(false);
-    let tempStateHolder = jobList.filter((job => job.id === tempJobInfo.id));
-    tempStateHolder.companyInput = tempJobInfo.companyInput;
-    tempStateHolder.dateFrom = tempJobInfo.dateFrom;
-    tempStateHolder.dateUntil = tempJobInfo.dateUntil;
-    tempStateHolder.jobTitle = tempJobInfo.jobTitle;
-    tempStateHolder.jobOverview = tempJobInfo.jobOverview;
-    setJobList([...jobList, jobList]);
+    const tempArray = [...jobList]
+    
+    for (let i = 0; i < tempArray.length; i++) {
+      if (tempArray[i].id === tempJobInfo.id) {
+        tempArray[i] = {...tempArray[i], companyInput: tempJobInfo.companyInput,
+          dateFrom: tempJobInfo.dateFrom,
+          dateUntil: tempJobInfo.dateUntil,
+          jobTitle: tempJobInfo.jobTitle,
+          jobOverview: tempJobInfo.jobOverview}
+      }
+      break;
+    }
+
+    setJobList(tempArray);
     
     
   }
