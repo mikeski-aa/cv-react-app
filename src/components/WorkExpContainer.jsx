@@ -5,20 +5,17 @@ import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { EditExistingExpModal } from "./EditExistingExpModal";
 
-
 function WorkExpContainer() {
   const [addModalVisible, setAddModalVisible] = useState(false);
   const [editModalVisible, setEditModalVisible] = useState(false);
-  const [tempJobInfo, setTempJobInfo] = useState(
-    {
-      id: "",
-      companyInput: "",
-      dateFrom: "",
-      dateUntil: "",
-      jobTitle: "",
-      jobOverview: "",
-    },
-  );
+  const [tempJobInfo, setTempJobInfo] = useState({
+    id: "",
+    companyInput: "",
+    dateFrom: "",
+    dateUntil: "",
+    jobTitle: "",
+    jobOverview: "",
+  });
   const [jobList, setJobList] = useState([]);
 
   // resets state - used when closing modal by saving or cancelling addition
@@ -113,22 +110,23 @@ function WorkExpContainer() {
   // errors with rendering look into it
   function handleCardEditSave() {
     setEditModalVisible(false);
-    const tempArray = [...jobList]
-    
+    const tempArray = [...jobList];
+
     for (let i = 0; i < tempArray.length; i++) {
       if (tempArray[i].id === tempJobInfo.id) {
-        tempArray[i] = {...tempArray[i], companyInput: tempJobInfo.companyInput,
+        tempArray[i] = {
+          ...tempArray[i],
+          companyInput: tempJobInfo.companyInput,
           dateFrom: tempJobInfo.dateFrom,
           dateUntil: tempJobInfo.dateUntil,
           jobTitle: tempJobInfo.jobTitle,
-          jobOverview: tempJobInfo.jobOverview}
+          jobOverview: tempJobInfo.jobOverview,
+        };
       }
       break;
     }
 
     setJobList(tempArray);
-    
-    
   }
 
   return (
@@ -145,7 +143,6 @@ function WorkExpContainer() {
         saveAction={handleSaveClick}
         stateUpdate={handleStateChange}
       />
-
 
       <EditExistingExpModal
         modalState={editModalVisible}
