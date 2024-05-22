@@ -51,6 +51,7 @@ function WorkExpContainer() {
 
   // need to create if / case for to handle data coming from different input sources
   function handleStateChange(input, source) {
+    console.log('detecting click' +' ' + input + ' source ' + source)
     if (source === "companyInput") {
       setTempJobInfo({ ...tempJobInfo, companyInput: input });
     } else if (source === "dateFrom") {
@@ -96,8 +97,10 @@ function WorkExpContainer() {
 
   // card edit click handler
   function handleCardEditOpen(details) {
+    console.log(details);
     setEditModalVisible(true);
     setTempJobInfo(details);
+    console.log(tempJobInfo);
   }
 
   // card edit close handler
@@ -112,6 +115,7 @@ function WorkExpContainer() {
   function handleCardEditSave() {
     setEditModalVisible(false);
     const tempArray = [...jobList];
+    console.log(tempArray);
 
     for (let i = 0; i < tempArray.length; i++) {
       if (tempArray[i].id === tempJobInfo.id) {
@@ -122,11 +126,12 @@ function WorkExpContainer() {
           dateUntil: tempJobInfo.dateUntil,
           jobTitle: tempJobInfo.jobTitle,
           jobOverview: tempJobInfo.jobOverview,
-        };
+        }
       }
-      break;
+      
     }
 
+    console.log(tempArray);
     setJobList(tempArray);
   }
 

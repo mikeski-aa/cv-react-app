@@ -127,8 +127,8 @@ function EducationContainer() {
           fieldOfStudy: tempEducationInfo.fieldOfStudy,
           gradeAchieved: tempEducationInfo.gradeAchieved,
         };
-      }
-      break;
+      };
+
     }
 
     setEducationList(tempArray);
