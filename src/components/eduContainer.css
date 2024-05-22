@@ -60,4 +60,15 @@ h4, h3 {
     font-weight: 550;
 }
 
+.datePlace>.dateFrom, .datePlace>.dateUntil {
+    width: 100%;
+}
+
+.topContainer>.institutionName, .eduCard>.fieldOfStudy, .eduCard>.gradeAchieved {
+    margin: 0;
+}
+
+h4.dateFrom, h4.dateUntil{
+    margin: 0;
+}
 

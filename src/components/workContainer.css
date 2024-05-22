@@ -51,3 +51,7 @@
 .dateT, .dateF {
     font-weight: 550;
 }
+
+.jobCard>.jobTitle, .jobCard>.institutionName {
+    margin: 0;
+}

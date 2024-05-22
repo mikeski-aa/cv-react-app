@@ -40,16 +40,19 @@ function InputAndButtons({inputDivClass, inputClass, inputType, placeholderText}
         isDisabled={disabledInput}
         action={handleInputChange}
       />
-      <AddNewButton
-        className={!visibleToggle ? "editInput show" : "editInput hide"}
-        text="Edit"
-        action={handleEditClick}
-      />
-      <AddNewButton
-        className={visibleToggle ? 'saveNameInput show' : 'saveNameInput hide'}
-        text="Save"
-        action={handleSaveClick}
-      />
+      <div className="contactInputButtons">
+        <AddNewButton
+          className={!visibleToggle ? "editInput show" : "editInput hide"}
+          text="Edit"
+          action={handleEditClick}
+        />
+        <AddNewButton
+          className={visibleToggle ? 'saveNameInput show' : 'saveNameInput hide'}
+          text="Save"
+          action={handleSaveClick}
+        />
+      </div>
+
     </div>
   );
 }
