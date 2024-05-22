@@ -1,6 +1,7 @@
 import "./Modals.css";
 import { AddNewButton } from "./AddNewButton";
 import { FormInput } from "./FormInput";
+import { TextArea } from "./TextAreaComp";
 
 // displays modal to add a new section to work experience on CV
 
@@ -41,7 +42,7 @@ function WorkExpModal({ isOpen, saveAction, closeAction, stateUpdate }) {
           action={stateUpdate}
           labelText="Job title"
         />
-        <FormInput
+        <TextArea
           className="jobOverview"
           type="textarea"
           placeholder="Describe your role"

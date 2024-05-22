@@ -47,5 +47,9 @@ h4, h3 {
     margin: 0;
 }
 
+.jobOverview {
+    resize: both;
+}
+
 
 
