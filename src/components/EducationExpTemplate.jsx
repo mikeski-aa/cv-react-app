@@ -1,5 +1,3 @@
-import "./eduCard.css"
-
 function EducationExpTemplate({
     institutionName,
     dateFrom,
@@ -11,7 +9,7 @@ function EducationExpTemplate({
   }) {
     return (
       <div className="eduCard">
-        <div className="testClass">
+        <div className="topContainer">
           <h3 className="institutionName">{institutionName}</h3>
           <h4>from</h4>
           <h4 className="dateFrom">{dateFrom}</h4>

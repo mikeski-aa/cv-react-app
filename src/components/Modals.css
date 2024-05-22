@@ -4,6 +4,7 @@
     width: 100%;
     height: 100%;
     overflow: auto;
+    background-color: rgba(119, 117, 117, 0.699);
 }
 
 .workExpModal, .editWorkExpModal, .editEducationModal{
@@ -19,7 +20,11 @@
     box-shadow: 2px solid black;
 }
 
-.editWorkExpModal, .editEducationModal {
+.editWorkExpModal, .editEducationModal, .workExpModal {
     height: fit-content;
     width: fit-content;
+}
+
+textarea {
+    resize: both;
 }

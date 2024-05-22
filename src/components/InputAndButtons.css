@@ -1,3 +1,17 @@
 .hide {
     display: none
 }
+
+.fullNameDiv {
+    display: flex;
+}
+
+.inputName {
+    font-size: larger;
+    border: 0;
+
+}
+
+.header {
+    margin-bottom: 10px;
+}

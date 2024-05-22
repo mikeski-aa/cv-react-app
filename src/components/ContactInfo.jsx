@@ -1,4 +1,5 @@
 import { InputAndButtons } from "./InputAndButtons";
+import "./contactInfo.css"
 
 function ContactInfo() {
   return (

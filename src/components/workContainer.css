@@ -1,0 +1,41 @@
+.workExp {
+    background-color: pink;
+    outline: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+    position: relative;
+    width: 75%;
+
+}
+
+
+.workExperienceDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.jobCard {
+    display: flex;
+    flex-direction: column;
+    outline: 2px dotted blue;
+    background-color: rgba(245, 245, 220, 0.411);
+    padding: 5px;
+    width: 100%;
+   
+}
+
+
+
+.workExperienceDetails {
+    width: 75%;
+}
+
+.addWorkExp {
+    position: absolute;
+    right: 0%;
+    margin-bottom: 10px;
+}
