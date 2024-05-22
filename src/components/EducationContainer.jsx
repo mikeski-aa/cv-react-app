@@ -115,6 +115,7 @@ function EducationContainer() {
   function handleCardEditSave() {
     setEduEditModalVisible(false);
     const tempArray = [...educationList];
+    console.log('am i not clicking?')
 
     for (let i = 0; i < tempArray.length; i++) {
       if (tempArray[i].id === tempEducationInfo.id) {
@@ -153,7 +154,7 @@ function EducationContainer() {
         institutionObjectName={tempEducationInfo.institutionName}
         dateObjectFrom={tempEducationInfo.dateFrom}
         dateObjectUntill={tempEducationInfo.dateUntil}
-        eduObjectSubject={tempEducationInfo.gradeAchieved}
+        eduObjectSubject={tempEducationInfo.fieldOfStudy}
         eduObjectGrade={tempEducationInfo.gradeAchieved}
         closeEditModal={handleCardEditClose}
         saveEditModal={handleCardEditSave}

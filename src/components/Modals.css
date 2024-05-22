@@ -6,7 +6,7 @@
     overflow: auto;
 }
 
-.workExpModal, .editWorkExpModal{
+.workExpModal, .editWorkExpModal, .editEducationModal{
     display: flex;
     flex-direction: column;
     background: grey;
@@ -19,7 +19,7 @@
     box-shadow: 2px solid black;
 }
 
-.editWorkExpModal {
+.editWorkExpModal, .editEducationModal {
     height: fit-content;
     width: fit-content;
 }

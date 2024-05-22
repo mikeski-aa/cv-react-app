@@ -18,7 +18,7 @@ function EditEducationExpModal({
 
   return (
     <div className="modal">
-      <div className="editWorkExpModal">
+      <div className="editEducationModal">
         <FormInput
           className="institutionName"
           type="text"

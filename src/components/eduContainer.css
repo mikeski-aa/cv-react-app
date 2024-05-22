@@ -3,15 +3,19 @@
     outline: 2px solid black;
     display: flex;
     flex-direction: column;
+    align-items: center;
 
 
 }
 
 .addEducationExp {
     position: relative;
-
     margin-bottom: 10px;
-    width: fit-content;
+    
 
+}
+
+.eduExpDetails {
+    width: 75%;
 }
 
