@@ -1,6 +1,7 @@
 import "./Modals.css";
 import { AddNewButton } from "./AddNewButton";
 import { FormInput } from "./FormInput";
+import { TextArea } from "./TextAreaComp";
 
 // edit modal for specific job card
 function EditExistingExpModal({
@@ -27,6 +28,7 @@ function EditExistingExpModal({
           inputDefault={companyObjectName}
           action={stateUpdate}
           labelText="Company Name"
+          modalLabel={"modalLabel"}
         />
         <FormInput
           className="dateFrom"
@@ -35,6 +37,7 @@ function EditExistingExpModal({
           inputDefault={dateObjectFrom}
           action={stateUpdate}
           labelText="Starting date"
+          modalLabel={"modalLabel"}
         />
         <FormInput
           className="dateUntil"
@@ -44,6 +47,7 @@ function EditExistingExpModal({
           action={stateUpdate}
           labelText="Finish date"
           maxInputDate="2030-01-01"
+          modalLabel={"modalLabel"}
         />
         <FormInput
           className="jobTitle"
@@ -52,14 +56,16 @@ function EditExistingExpModal({
           inputDefault={jobObjectTitle}
           action={stateUpdate}
           labelText="Job Title"
+          modalLabel={"modalLabel"}
         />
-        <FormInput
+        <TextArea
           className="jobOverview"
           type="textarea"
           isDisabled={false}
           inputDefault={jobObjectDesc}
           action={stateUpdate}
           labelText="Job responsibilities"
+          modalLabel={"modalLabel"}
         />
         <AddNewButton className="closeModal" text="Close" action={closeEditModal} />
         <AddNewButton className="saveModal" text="Save" action={saveEditModal} />

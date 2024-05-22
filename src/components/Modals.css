@@ -10,9 +10,8 @@
 .workExpModal, .editWorkExpModal, .editEducationModal{
     display: flex;
     flex-direction: column;
+    gap: 0.25rem;
     background: grey;
-    height: 150px;
-    width: 240px;
     margin: auto;
     padding: 2%;
     border: 2px solid #000;
@@ -27,4 +26,25 @@
 
 textarea {
     resize: both;
+}
+
+.workExpModal {
+    position: relative;
+    
+}
+
+.modalLabel {
+    display: flex;
+    /* gap: 15rem; */
+    align-items: center;
+
+}
+
+/* .companyInput, .dateFrom, .dateUntil, .jobTitle{
+    position: absolute;
+    right: 2%;
+} */
+
+.jobOverview {
+    height: 1rem;
 }

@@ -18,6 +18,7 @@ function WorkExpModal({ isOpen, saveAction, closeAction, stateUpdate }) {
           isDisabled={false}
           action={stateUpdate}
           labelText="Enter company name"
+          modalLabel={"modalLabel"}
         />
         <FormInput
           className="dateFrom"
@@ -25,6 +26,7 @@ function WorkExpModal({ isOpen, saveAction, closeAction, stateUpdate }) {
           isDisabled={false}
           action={stateUpdate}
           labelText="Starting date"
+          modalLabel={"modalLabel"}
         />
         <FormInput
           className="dateUntil"
@@ -33,6 +35,7 @@ function WorkExpModal({ isOpen, saveAction, closeAction, stateUpdate }) {
           action={stateUpdate}
           labelText="Date of finish"
           maxInputDate="2030-01-01"
+          modalLabel={"modalLabel"}
         />
         <FormInput
           className="jobTitle"
@@ -41,6 +44,7 @@ function WorkExpModal({ isOpen, saveAction, closeAction, stateUpdate }) {
           isDisabled={false}
           action={stateUpdate}
           labelText="Job title"
+          modalLabel={"modalLabel"}
         />
         <TextArea
           className="jobOverview"
@@ -49,6 +53,7 @@ function WorkExpModal({ isOpen, saveAction, closeAction, stateUpdate }) {
           isDisabled={false}
           action={stateUpdate}
           labelText="Job overview"
+          modalLabel={"modalLabel"}
         />
         <div className="formButtons">
           <AddNewButton

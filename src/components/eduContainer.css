@@ -19,6 +19,7 @@
 
 .eduExpDetails {
     width: 75%;
+    padding-top: 25px;
 }
 
 .eduCard {
@@ -32,13 +33,13 @@
 }
 
 .topContainer {
-    display: grid;
-    grid-template-columns: 10fr 1fr 2fr 1fr 2fr;
+    display: flex;
     gap: 5px;
     align-items: center;
     flex-wrap: nowrap;
     word-wrap: normal;
     position: relative;
+    justify-content: space-between;
 }
 
 
@@ -51,5 +52,12 @@ h4, h3 {
     resize: both;
 }
 
+.gradeAchieved {
+    font-weight: 500;
+}
+
+.dateUntil, .dateFrom {
+    font-weight: 550;
+}
 
 

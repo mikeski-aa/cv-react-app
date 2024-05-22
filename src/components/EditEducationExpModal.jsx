@@ -27,6 +27,7 @@ function EditEducationExpModal({
           inputDefault={institutionObjectName}
           action={stateUpdate}
           labelText="Name of institution"
+          modalLabel={"modalLabel"}
         />
         <FormInput
           className="dateFrom"
@@ -35,6 +36,7 @@ function EditEducationExpModal({
           inputDefault={dateObjectFrom}
           action={stateUpdate}
           labelText="Starting date"
+          modalLabel={"modalLabel"}
         />
         <FormInput
           className="dateUntil"
@@ -44,6 +46,7 @@ function EditEducationExpModal({
           action={stateUpdate}
           labelText="Finish date"
           maxInputDate="2030-01-01"
+          modalLabel={"modalLabel"}
         />
         <FormInput
           className="fieldOfStudy"
@@ -52,6 +55,7 @@ function EditEducationExpModal({
           inputDefault={eduObjectSubject}
           action={stateUpdate}
           labelText="Field of study"
+          modalLabel={"modalLabel"}
         />
         <FormInput
           className="gradeAchieved"
@@ -60,6 +64,7 @@ function EditEducationExpModal({
           inputDefault={eduObjectGrade}
           action={stateUpdate}
           labelText="Grade achieved"
+          modalLabel={"modalLabel"}
         />
         <AddNewButton className="closeModal" text="Close" action={closeEditModal} />
         <AddNewButton className="saveModal" text="Save" action={saveEditModal} />

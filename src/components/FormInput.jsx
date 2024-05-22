@@ -1,4 +1,14 @@
-function FormInput({ className, type, placeholder, isDisabled, action, inputDefault, labelText, maxInputDate}) {
+function FormInput({
+  className,
+  type,
+  placeholder,
+  isDisabled,
+  action,
+  inputDefault,
+  labelText,
+  maxInputDate,
+  modalLabel
+}) {
   // seperating event handler here gives more
   // flexibility - i.e can add parameters to functions being passed down
   const handleInputChange = (e) => {
@@ -7,19 +17,22 @@ function FormInput({ className, type, placeholder, isDisabled, action, inputDefa
     action(newValue, sourceInput);
   };
   return (
-    <label> {labelText}
+    <div className={modalLabel}>
+      <label>
+        {labelText}
+      </label>
+      
       <input
         type={type}
         className={className}
         placeholder={placeholder}
         disabled={isDisabled}
-        onChange={handleInputChange} 
+        onChange={handleInputChange}
         defaultValue={inputDefault}
         max={maxInputDate}
       />
-
       <span className="error" aria-live="polite"></span>
-    </label>
+    </div>
   );
 }
 

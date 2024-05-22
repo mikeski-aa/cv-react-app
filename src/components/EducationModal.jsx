@@ -17,6 +17,7 @@ function EducationModal({ isOpen, saveAction, closeAction, stateUpdate }) {
           isDisabled={false}
           action={stateUpdate}
           labelText="Enter name of the institution"
+          modalLabel={"modalLabel"}
         />
         <FormInput
           className="dateFrom"
@@ -24,6 +25,7 @@ function EducationModal({ isOpen, saveAction, closeAction, stateUpdate }) {
           isDisabled={false}
           action={stateUpdate}
           labelText="Starting date"
+          modalLabel={"modalLabel"}
         />
         <FormInput
           className="dateUntil"
@@ -32,6 +34,7 @@ function EducationModal({ isOpen, saveAction, closeAction, stateUpdate }) {
           action={stateUpdate}
           labelText="Date of finish"
           maxInputDate="2030-01-01"
+          modalLabel={"modalLabel"}
         />
         <FormInput
           className="fieldOfStudy"
@@ -40,14 +43,16 @@ function EducationModal({ isOpen, saveAction, closeAction, stateUpdate }) {
           isDisabled={false}
           action={stateUpdate}
           labelText="Field of study"
+          modalLabel={"modalLabel"}
         />
         <FormInput
           className="gradeAchieved"
-          type="textarea"
+          type="text"
           placeholder="Enter your grade achieved"
           isDisabled={false}
           action={stateUpdate}
           labelText="Grade achieved"
+          modalLabel={"modalLabel"}
         />
         <div className="formButtons">
           <AddNewButton

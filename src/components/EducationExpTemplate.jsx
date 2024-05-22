@@ -11,10 +11,12 @@ function EducationExpTemplate({
       <div className="eduCard">
         <div className="topContainer">
           <h3 className="institutionName">{institutionName}</h3>
-          <h4>from</h4>
-          <h4 className="dateFrom">{dateFrom}</h4>
-          <h4>until</h4>
-          <h4 className="dateUntil">{dateUntil}</h4>
+          <div className="datePlace">
+            <h4 className="datePlaceholderText">from:</h4>
+            <h4 className="dateFrom">{dateFrom}</h4>
+            <h4 className="datePlaceholderText">until:</h4>
+            <h4 className="dateUntil">{dateUntil}</h4>
+          </div>
         </div>
         
         <h4 className="fieldOfStudy">{fieldOfStudy}</h4>

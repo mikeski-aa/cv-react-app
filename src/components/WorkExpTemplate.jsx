@@ -11,10 +11,12 @@ function WorkExpTemplate({
     <div className="jobCard">
       <div className="topContainer">
         <h3 className="companyName">{companyName}</h3>
-        <h4>from</h4>
-        <h4 className="dateF">{dateF}</h4>
-        <h4>until</h4>
-        <h4 className="dateT">{dateT}</h4>
+        <div className="datePlace">
+          <h4 className="datePlaceholderText">from:</h4>
+          <h4 className="dateF">{dateF}</h4>
+          <h4 className="datePlaceholderText">until:</h4>
+          <h4 className="dateT">{dateT}</h4>
+        </div>    
       </div>
 
       <h4 className="jobTitle">{jobT}</h4>
