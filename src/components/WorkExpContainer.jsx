@@ -4,6 +4,7 @@ import { WorkExpModal } from "./WorkExpModal";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { EditExistingExpModal } from "./EditExistingExpModal";
+import "./workExp.css";
 
 function WorkExpContainer() {
   const [addModalVisible, setAddModalVisible] = useState(false);

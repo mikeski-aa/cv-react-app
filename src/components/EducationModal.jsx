@@ -13,7 +13,7 @@ function EducationModal({ isOpen, saveAction, closeAction, stateUpdate }) {
         <FormInput
           className="institutionName"
           type="text"
-          placeholder="Enter company name"
+          placeholder="Enter name of the institution"
           isDisabled={false}
           action={stateUpdate}
           labelText="Enter name of the institution"
@@ -31,6 +31,7 @@ function EducationModal({ isOpen, saveAction, closeAction, stateUpdate }) {
           isDisabled={false}
           action={stateUpdate}
           labelText="Date of finish"
+          maxInputDate="2030-01-01"
         />
         <FormInput
           className="fieldOfStudy"

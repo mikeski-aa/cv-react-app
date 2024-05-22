@@ -43,6 +43,7 @@ function EditExistingExpModal({
           inputDefault={dateObjectUntill}
           action={stateUpdate}
           labelText="Finish date"
+          maxInputDate="2030-01-01"
         />
         <FormInput
           className="jobTitle"

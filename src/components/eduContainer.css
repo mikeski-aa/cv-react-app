@@ -1,0 +1,17 @@
+.educationContainer {
+    background-color: pink;
+    outline: 2px solid black;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.addEducationExp {
+    position: relative;
+
+    margin-bottom: 10px;
+    width: fit-content;
+
+}
+

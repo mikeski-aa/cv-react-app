@@ -1,3 +1,5 @@
+import "./eduCard.css"
+
 function EducationExpTemplate({
     institutionName,
     dateFrom,
@@ -8,12 +10,17 @@ function EducationExpTemplate({
     actionDelete,
   }) {
     return (
-      <div className="jobCard">
-        <h3 className="companyName">{institutionName}</h3>
-        <h3 className="dateF">{dateFrom}</h3>
-        <h3 className="dateT">{dateUntil}</h3>
-        <h3 className="fieldOfStudy">{fieldOfStudy}</h3>
-        <h3 className="gradeAchieved">{gradeAchieved}</h3>
+      <div className="eduCard">
+        <div className="testClass">
+          <h3 className="institutionName">{institutionName}</h3>
+          <h4>from</h4>
+          <h4 className="dateFrom">{dateFrom}</h4>
+          <h4>until</h4>
+          <h4 className="dateUntil">{dateUntil}</h4>
+        </div>
+        
+        <h4 className="fieldOfStudy">{fieldOfStudy}</h4>
+        <h4 className="gradeAchieved">{gradeAchieved}</h4>
         <div className="cardButtons">
           <button onClick={actionEdit} className="editEducationExpBtn">
             Edit

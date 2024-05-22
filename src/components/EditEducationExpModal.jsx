@@ -5,7 +5,7 @@ import { FormInput } from "./FormInput";
 // edit modal for specific education card
 function EditEducationExpModal({
   modalState,
-  companyObjectName: institutionObjectName,
+  institutionObjectName,
   dateObjectFrom,
   dateObjectUntill,
   eduObjectSubject,
@@ -26,7 +26,7 @@ function EditEducationExpModal({
           git
           inputDefault={institutionObjectName}
           action={stateUpdate}
-          labelText="Company Name"
+          labelText="Name of institution"
         />
         <FormInput
           className="dateFrom"
@@ -43,6 +43,7 @@ function EditEducationExpModal({
           inputDefault={dateObjectUntill}
           action={stateUpdate}
           labelText="Finish date"
+          maxInputDate="2030-01-01"
         />
         <FormInput
           className="fieldOfStudy"

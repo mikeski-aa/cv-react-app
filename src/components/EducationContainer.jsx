@@ -3,7 +3,8 @@ import { EducationExpTemplate } from "./EducationExpTemplate"
 import { EducationModal } from "./EducationModal";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
-import { EditExistingExpModal } from "./EditExistingExpModal";
+import { EditEducationExpModal } from "./EditEducationExpModal";
+import "./eduContainer.css";
 
 // structure of this file is very similar to WorkExpContainer
 // a template might have been better instead of two files.
@@ -53,7 +54,7 @@ function EducationContainer() {
 
   // need to create if / case for to handle data coming from different input sources
   function handleStateChange(input, source) {
-    if (source === "companyInput") {
+    if (source === "institutionName") {
       setTempEducationInfo({ ...tempEducationInfo, institutionName: input });
     } else if (source === "dateFrom") {
       setTempEducationInfo({ ...tempEducationInfo, dateFrom: input });
@@ -70,7 +71,7 @@ function EducationContainer() {
   // this can probably get moved out to its own file right?
   function EducationExpDetails() {
     return (
-      <div className="workExperienceDetails">
+      <div className="eduExpDetails">
         {educationList.map((item) => (
           <EducationExpTemplate
             key={item.id}
@@ -147,7 +148,7 @@ function EducationContainer() {
         stateUpdate={handleStateChange}
       />
 
-      <EditExistingExpModal
+      <EditEducationExpModal
         modalState={editEduModalVisible}
         institutionObjectName={tempEducationInfo.institutionName}
         dateObjectFrom={tempEducationInfo.dateFrom}

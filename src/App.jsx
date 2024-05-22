@@ -2,6 +2,7 @@ import "./App.css";
 import { InputAndButtons } from "./components/InputAndButtons";
 import { ContactInfo } from "./components/ContactInfo";
 import { WorkExpContainer } from "./components/WorkExpContainer";
+import { EducationContainer} from "./components/EducationContainer"
 
 
 function App() {
@@ -15,7 +16,11 @@ function App() {
         placeholderText="Enter your full name"
       />
       <ContactInfo/>
-      <WorkExpContainer/>
+      <div className="main">
+        <WorkExpContainer/>
+        <EducationContainer/>
+      </div>
+      
     </>
   );
 }

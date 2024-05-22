@@ -31,6 +31,7 @@ function WorkExpModal({ isOpen, saveAction, closeAction, stateUpdate }) {
           isDisabled={false}
           action={stateUpdate}
           labelText="Date of finish"
+          maxInputDate="2030-01-01"
         />
         <FormInput
           className="jobTitle"
