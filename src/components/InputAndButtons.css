@@ -4,14 +4,26 @@
 
 .fullNameDiv {
     display: flex;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: 0;
+
 }
 
 .inputName {
     font-size: larger;
     border: 0;
+    border-bottom: 1px solid black;
 
 }
 
 .header {
     margin-bottom: 10px;
 }
+
+.editInput {
+    width: fit-content;
+}
+

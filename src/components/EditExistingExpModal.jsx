@@ -67,8 +67,11 @@ function EditExistingExpModal({
           labelText="Job responsibilities"
           modalLabel={"modalLabel"}
         />
-        <AddNewButton className="closeModal" text="Close" action={closeEditModal} />
-        <AddNewButton className="saveModal" text="Save" action={saveEditModal} />
+        <div className="editModalButtons">
+          <AddNewButton className="closeModal" text="Close" action={closeEditModal} />
+          <AddNewButton className="saveModal" text="Save" action={saveEditModal} />
+        </div>
+        
       </div>
     </div>
   );

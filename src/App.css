@@ -10,3 +10,8 @@
     flex-direction: column;
     align-items: center;
 }
+
+.inputName {
+    display: flex;
+    text-align: center;
+}

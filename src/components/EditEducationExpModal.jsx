@@ -66,8 +66,11 @@ function EditEducationExpModal({
           labelText="Grade achieved"
           modalLabel={"modalLabel"}
         />
-        <AddNewButton className="closeModal" text="Close" action={closeEditModal} />
-        <AddNewButton className="saveModal" text="Save" action={saveEditModal} />
+        <div className="formEditButtons">
+          <AddNewButton className="closeModal" text="Close" action={closeEditModal} />
+          <AddNewButton className="saveModal" text="Save" action={saveEditModal} />
+        </div>
+        
       </div>
     </div>
   );

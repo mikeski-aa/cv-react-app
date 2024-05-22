@@ -10,7 +10,6 @@
 
 }
 
-
 .workExperienceDetails {
     display: flex;
     flex-direction: column;
@@ -29,8 +28,6 @@
    
 }
 
-
-
 .workExperienceDetails {
     width: 75%;
     padding-top: 25px;
@@ -40,14 +37,6 @@
     position: absolute;
     right: 0%;
     margin-bottom: 10px;
-}
-
-label {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    width: 100%;
 }
 
 .datePlace {

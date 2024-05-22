@@ -17,9 +17,11 @@ function TextArea({
     action(newValue, sourceInput);
   };
   return (
-    <label className={modalLabel}>
-      {" "}
-      {labelText}
+    <div className={modalLabel}>
+      <label>
+        {labelText}
+      </label>
+      
       <textarea
         type={type}
         className={className}
@@ -30,7 +32,7 @@ function TextArea({
         max={maxInputDate}
       />
       <span className="error" aria-live="polite"></span>
-    </label>
+    </div>
   );
 }
 

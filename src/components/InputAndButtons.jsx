@@ -24,13 +24,6 @@ function InputAndButtons({inputDivClass, inputClass, inputType, placeholderText}
     setInputContent(tempInputContent);
   }
 
- // on clicking cancel display edit, hide cancel and save
- // cancel should ideally return to the value input field begun with
- // having issues getting this to work, will leave it as is for now.
-  function handleCancelClick() {
-    setDisabledInput(true);
-    setVisibleToggle(false);
-  }
 
  // temp input holder -> made in order to be able to store values when cancel is clicked 
   function handleInputChange(e){
@@ -56,11 +49,6 @@ function InputAndButtons({inputDivClass, inputClass, inputType, placeholderText}
         className={visibleToggle ? 'saveNameInput show' : 'saveNameInput hide'}
         text="Save"
         action={handleSaveClick}
-      />
-      <AddNewButton
-        className={visibleToggle ? 'cancelNameInput show' : 'cancelNameInput hide'}
-        text="Cancel" 
-        action={handleCancelClick}
       />
     </div>
   );

@@ -21,7 +21,6 @@ function FormInput({
       <label>
         {labelText}
       </label>
-      
       <input
         type={type}
         className={className}
