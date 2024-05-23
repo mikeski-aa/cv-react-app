@@ -34,7 +34,7 @@ function InputAndButtons({inputDivClass, inputClass, inputType, placeholderText}
   return (
     <div className={inputDivClass}>
       <FormInput
-        className={inputClass}
+        className={!disabledInput ? inputClass + " editable" : inputClass + " showNice"}
         type={inputType}
         placeholder={placeholderText}
         isDisabled={disabledInput}
