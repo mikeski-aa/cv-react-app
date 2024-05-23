@@ -139,7 +139,7 @@ function WorkExpContainer() {
     <div className="workExp">
       <AddNewButton
         className="addWorkExp"
-        text="Add job"
+        text="Add position"
         action={handleOpenClick}
       />
       <WorkExperienceDetails />
