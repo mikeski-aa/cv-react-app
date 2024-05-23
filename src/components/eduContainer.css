@@ -1,6 +1,5 @@
 .educationContainer {
-    background-color: pink;
-    outline: 2px solid black;
+    border-bottom: 2px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
