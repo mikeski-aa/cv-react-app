@@ -19,7 +19,9 @@
     border-radius: 10px;
     box-shadow: 2px solid black;
     top: 15%;
+    position: relative
 }
+
 
 .editWorkExpModal, .editEducationModal, .workExpModal {
     height: fit-content;
@@ -30,10 +32,6 @@ textarea {
     resize: both;
 }
 
-.workExpModal {
-    position: relative;
-    
-}
 
 .modalLabel {
     display: flex;
@@ -41,7 +39,9 @@ textarea {
 
 }
 
-.companyInput, .dateFrom, .dateUntil, .jobTitle, .jobOverview, .institutionName, .fieldOfStudy, .gradeAchieved{
+.modalLabel>.companyInput, .modalLabel>.dateFrom, .modalLabel>.dateUntil, 
+.modalLabel>.jobTitle, .modalLabel>.jobOverview, .modalLabel>.institutionName, 
+.modalLabel>.fieldOfStudy, .modalLabel>.gradeAchieved{
     width: 200px;
     margin-left: 10px;
     padding: 0;

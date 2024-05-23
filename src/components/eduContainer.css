@@ -22,13 +22,20 @@
 }
 
 .eduCard {
+    border-bottom: 2px solid black;
     display: flex;
     flex-direction: column;
-    outline: 2px dotted blue;
-    background-color: rgba(245, 245, 220, 0.411);
     padding: 5px;
     width: 100%;
+    position: relative;
    
+}
+
+.eduCard>.cardButtons {
+    position: absolute;
+    right: 0%;
+    top: 60%;
+
 }
 
 .topContainer {
